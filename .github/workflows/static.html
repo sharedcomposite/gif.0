@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troll Message</title>
+    <style>
+        .container {
+            position: relative;
+            width: 300px; /* Adjust size as needed */
+        }
+        .gif {
+            width: 100%;
+            height: auto;
+        }
+        .video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none; /* Initially hidden */
+        }
+        .container:hover .video {
+            display: block; /* Show video on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://th.bing.com/th/id/OIP.KzsgzC1nkSj8v5Qhy34TRwHaEK?rs=1&pid=ImgDetMain" alt="GIF" class="gif">
+        <video src="https://www.youtube.com/watch?v=rZbd7Z6yAGU" class="video" autoplay muted></video>
+    </div>
+</body>
+</html>
